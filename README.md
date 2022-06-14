@@ -11,3 +11,6 @@ Esta información se mantendrá constante (a excepción del saldo) durante la ej
 algoritmo.
 
 # Grafos, Diagramas y complejidad ciclomatica de funciones 
+
+### Funcion Seleccion de moneda:
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/grafos_y_diagramas/selec_moneda.png)
