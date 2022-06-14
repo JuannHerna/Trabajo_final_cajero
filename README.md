@@ -15,4 +15,11 @@ algoritmo.
 ### Funcion Seleccion de moneda:
 ![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/grafos_y_diagramas/selec_moneda.png)
 
-###
+### Funcion Cambio de moneda
+#### Complejidad ciclomatica
+"""
+**R= 2
+V(g)=A-N+2 = 7-7+2 = 2
+V(g)=P+1 = 1+1 = 2**
+"""
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/grafos_y_diagramas/cambio_de_moneda_peso.png)
