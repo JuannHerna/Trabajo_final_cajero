@@ -15,7 +15,7 @@ def menu():
     print("**********************")
     opcion=int(input(""))
     while opcion<0 or opcion>4:
-        opcion=int(input("Ingrese un valor valido del menu"))
+        opcion=int(input("Ingrese un valor valido del menu: "))
     return opcion
 
 def selec_moneda():
@@ -102,10 +102,11 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
     volver()
     return saldo_cuenta
 
-def transferencias(saldo):
+def transferencias(saldo, cuenta):
     """
     Esta funcion se encarga de mostrar realizar transferencias a otras cuentas
     """
+    cuenta_trans= cuenta
     print("Ingrese cuenta a la que se quiere transferir:")
     cuenta_destino=int(input(""))
     moneda= selec_moneda()
@@ -116,23 +117,61 @@ def transferencias(saldo):
         print("Monto a transferir en pesos:")
         monto= float(input(""))
         monto=cambio_de_moneda_peso(monto, 1)
-    print("Realizando Transferencia")
-    i=0
-    while i<5:
-        print("...")
-        i+=1
-        time.sleep(1)
-    print("Transferencia exitosa")
-    time.sleep(2)
-    saldo= saldo-monto
+        saldo=cambio_de_moneda_peso(saldo, 1)
+    if monto> saldo:
+        print("el monto igresado no es valido, no tiene los fundos suficientes")
+    else:
+        print("Realizando Transferencia")
+        i=0
+        while i<5:
+            print("...")
+            i+=1
+            time.sleep(1)
+        print("Transferencia exitosa")
+        time.sleep(2)
+        saldo= saldo-monto
     volver()
     return saldo
 
 
+def validacion():
+    cont=0
+    i=0
+    clave= 12345
+    dni=12345678
+    print("recopilando informacion")
+    while i<5:
+        print("...")
+        i+=1
+        time.sleep(1)
+    print("Ingrese clave de acceso:")
+    cla_ingresada= int(input(""))
+    while clave!=cla_ingresada and cont<3:
+            print("ingrese clave correcta: ")
+            cla_ingresada= int(input())
+            cont+=1
+    if cla_ingresada==clave:
+        print("Ingrese numero de documento: ")
+        documento= int(input())
+        while dni!=documento and cont<3:
+            print("ingrese documento correcto: ")
+            documento= int(input())
+            cont+=1
+    if documento==dni and cla_ingresada==clave:
+        opcion=0
+    else:
+        print("clave/dni incorrectos se retendra la tarjeta")
+        opcion=4
+    return opcion
+        
 def principal():
+ 
     saldo_en_cuenta=3564 #soles
-    clave= 6645
-    opcion=0
+    clave= 12345
+    dni=12345678
+    cuenta= 98765
+    print("Ingrese tarjeta en la ranura:")
+    opcion=validacion()
     while opcion!=4:
         opcion= menu()
         if opcion==1:
@@ -140,6 +179,6 @@ def principal():
         elif opcion==2:
             saldo_en_cuenta=retiros(saldo_en_cuenta, clave)
         elif opcion==3:
-            saldo_en_cuenta=transferencias(saldo_en_cuenta)
+            saldo_en_cuenta=transferencias(saldo_en_cuenta, cuenta)
     
 principal()
