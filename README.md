@@ -13,7 +13,7 @@ algoritmo.
 # Grafos, Diagramas y complejidad ciclomatica de funciones 
 
 ### Funcion Seleccion de moneda:
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/seleccion_moneda.jpg)
 #### Complejidad ciclomatica
 ```
 R= 2
@@ -37,7 +37,7 @@ def selec_moneda():
 ```
 
 ### Funcion Cambio de moneda
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/cambio_de_moneda.jpg)
 #### Complejidad ciclomatica
 ```
 R= 2
@@ -61,5 +61,7 @@ def cambio_de_moneda_peso(saldo_cuenta, opcion):
 ```
 
 
-### Funcion 
+### Funcion Consultas
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/consultas.jpg)
+
 #### Complejidad ciclomatica
