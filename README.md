@@ -211,6 +211,9 @@ def transferencias(saldo, cuenta):
 ![Image text]()
 #### Complejidad Cilomatica
 ```
+R=6
+V(g)= 31-27+2= 6
+V(g)= P+1= 5+1= 6
 ```
 #### Caminos posibles
 ```
@@ -221,6 +224,35 @@ def transferencias(saldo, cuenta):
 
 #### Codigo de funcion
 ```python
+def validacion():
+    cont=0
+    i=0
+    clave= 12345
+    dni=12345678
+    print("recopilando informacion")
+    while i<5:
+        print("...")
+        i+=1
+        time.sleep(1)
+    print("Ingrese clave de acceso:")
+    cla_ingresada= int(input(""))
+    while clave!=cla_ingresada and cont<3:
+            print("ingrese clave correcta: ")
+            cla_ingresada= int(input())
+            cont+=1
+    if cla_ingresada==clave:
+        print("Ingrese numero de documento: ")
+        documento= int(input())
+        while dni!=documento and cont<3:
+            print("ingrese documento correcto: ")
+            documento= int(input())
+            cont+=1
+    if documento==dni and cla_ingresada==clave:
+        opcion=0
+    else:
+        print("clave/dni incorrectos se retendra la tarjeta")
+        opcion=4
+    return opcion
 ```
 ### Funcion Principal
 ![Image text]()
