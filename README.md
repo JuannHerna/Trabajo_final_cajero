@@ -59,9 +59,42 @@ def cambio_de_moneda_peso(saldo_cuenta, opcion):
         resulta= saldo_cuenta/pesos
     return resulta
 ```
-
-
 ### Funcion Consultas
 ![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/consultas.jpg)
 
 #### Complejidad ciclomatica
+```
+R= 5
+V(g)= A -N +2 = 22 - 19 + 2 = 5
+V(g)= P+1= 4 + 1 = 5
+```
+#### Caminos posibles
+#### Casos de pueba
+
+#### Codigo de Funcion
+```python
+def consultas(saldo_cuenta):
+    """
+    Este procedimiento se encarga de mostar el saldo de la cuenta
+    y los ultimos 10 movimientos
+    """
+    randomi=["Transferencia", "Extraccion"]
+    saldo= saldo_cuenta
+    print("1. Posicion global")
+    print("2. Movimientos")
+    opcion=int(input())
+    while opcion<1 or opcion>2:
+        opcion=int(input("Ingrese un valor valido del menu"))
+    if opcion==1:
+        pesos= selec_moneda()
+        if pesos==1:
+            print(f"Usteded tiene {saldo} en Soles Peruanos")
+        else:
+            saldo= cambio_de_moneda_peso(saldo, 1)
+            print(f"Usted tiene {saldo} en Pesos Argentinos")
+    else:
+        print("Ultimos movimientos: ")
+        for i in range (10):
+            print(random.choice(randomi),"de:", random.randint(1,150), "pesos")
+    volver()  
+```
