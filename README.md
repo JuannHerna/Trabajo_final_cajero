@@ -21,7 +21,11 @@ V(G)= A - N + 2=8-8+2=2
 V(G)= 1 + 1=2
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 #### Codigo de la funcion
 ``` python
 def selec_moneda():
@@ -45,7 +49,11 @@ V(g)=A-N+2 = 7-7+2 = 2
 V(g)=P+1 = 1+1 = 2
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 #### Codigo de la funcion
 ``` python
 def cambio_de_moneda_peso(saldo_cuenta, opcion):
@@ -69,7 +77,11 @@ V(g)= A -N +2 = 22 - 19 + 2 = 5
 V(g)= P+1= 4 + 1 = 5
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 
 #### Codigo de Funcion
 ```python
@@ -106,6 +118,13 @@ R= 6
 V(g)= A-N+2= 32 - 28 + 2 = 6
 V(g)= 5 + 1 = 6
 ```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
 #### Codigo de funcion
 ``` python
 def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
@@ -139,4 +158,19 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
             saldo_cuenta= cambio_de_moneda_peso(saldo_cuenta,2)
     volver()
     return saldo_cuenta
+```
+### Funcion Transferencia
+![Image text]()
+#### Complejidad Cilomatica
+```
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
 ```
