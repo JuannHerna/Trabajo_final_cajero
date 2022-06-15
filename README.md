@@ -22,6 +22,9 @@ V(G)= 1 + 1=2
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6,7
+2) 1,2,3,4,5,8,5,8,5,6,7
+3)1,2,3,4,5,8,5,6,7
 ```
 #### Casos de pueba
 ```
@@ -50,6 +53,8 @@ V(g)=P+1 = 1+1 = 2
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6
+2) 1,2,3,7,5,6
 ```
 #### Casos de pueba
 ```
@@ -78,6 +83,10 @@ V(g)= P+1= 4 + 1 = 5
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6,7,9,10,11,12,19,20
+2) 1,2,3,4,5,6,7,8,7,9,15,16,17,16,19,20
+3)1,2,3,4,5,6,7,8,7,9,10,11,13,14,19,20
+4)1,2,3,4,5,6,7,9,15,16,18,20
 ```
 #### Casos de pueba
 ```
@@ -120,6 +129,11 @@ V(g)= 5 + 1 = 6
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28
+2) 1,2,3,4,7,8,9,10,14,26,27,28
+3)1,2,3,4,7,8,9,10,11,12,13,14,26,27,28
+4)1,2,3,4,5,6,10,11,12,13,14,26,27,28
+
 ```
 #### Casos de pueba
 ```
@@ -169,6 +183,10 @@ V(g)= 3+1= 4
 ```
 #### Caminos posibles
 ```
+1)1,2,3,4,5,6,7,8,13,14,23,24,25
+2)1,2,3,4,5,6,9,10,11,12,13,15,16,17,21,22,23,24,25
+3) 1,2,3,4,5,6,7,8,13,15,16,17,18,19,20,17,21,22,23,24,25
+4)1,2,3,4,5,6,9,10,11,12,13,14,23,24,25
 ```
 #### Casos de pueba
 ```
@@ -208,7 +226,7 @@ def transferencias(saldo, cuenta):
     return saldo
 ```
 ### Funcion Validacion
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/validacion.jpg)
 #### Complejidad Cilomatica
 ```
 R=6
@@ -217,6 +235,9 @@ V(g)= P+1= 5+1= 6
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6,7,8,9,6,10,11,12,13,14,15,12,16,17,18,19,20,21,22,19,23,24,25
+2) 1,2,3,4,5,6,10, 11,12,16,23,26,27,25
+3) 1,2,3,4,5,6,10,11,12,13,14,15,12,16,23,24,25
 ```
 #### Casos de pueba
 ```
@@ -258,6 +279,9 @@ def validacion():
 ![Image text]()
 #### Complejidad Cilomatica
 ```
+R=5
+V(g)= 18-15+2=5
+V(g)= 4+1= 5
 ```
 #### Caminos posibles
 ```
@@ -268,4 +292,19 @@ def validacion():
 
 #### Codigo de funcion
 ```python
+def principal():
+    saldo_en_cuenta=3564 #soles
+    clave= 12345
+    dni=12345678
+    cuenta= 98765
+    print("Ingrese tarjeta en la ranura:")
+    opcion=validacion()
+    while opcion!=4:
+        opcion= menu()
+        if opcion==1:
+            consultas(saldo_en_cuenta)
+        elif opcion==2:
+            saldo_en_cuenta=retiros(saldo_en_cuenta, clave)
+        elif opcion==3:
+            saldo_en_cuenta=transferencias(saldo_en_cuenta, cuenta)
 ```
