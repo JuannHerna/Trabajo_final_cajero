@@ -98,3 +98,45 @@ def consultas(saldo_cuenta):
             print(random.choice(randomi),"de:", random.randint(1,150), "pesos")
     volver()  
 ```
+### Funcion Retiros
+![Image text]()
+#### Complejidad ciclomatica
+```
+R= 6
+V(g)= A-N+2= 32 - 28 + 2 = 6
+V(g)= 5 + 1 = 6
+```
+#### Codigo de funcion
+``` python
+def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
+    """
+    Esta funcion se encarga de controlar los retiros de la cuenta
+    """
+    clave_original=clave
+    pesos= selec_moneda()
+    if pesos== 1:
+        print("Monto a retirar en soles: ")
+        monto= float(input(""))
+    else:
+        print("Monto a retirar en pesos: ")
+        monto= float(input(""))
+        saldo_cuenta= cambio_de_moneda_peso(saldo_cuenta,1) # Cambia todo el monto a pesos argentinos
+    if monto> saldo_cuenta:
+        print("El monto a retirar no es correcto")
+        print(f"Recuerde que el saldo en la cuenta es: {saldo_cuenta}")
+        monto= float(input("Ingrese el monto: "))
+    if monto>0 and monto<saldo_cuenta:
+        print("Ingrese la clave de acceso:")
+        clave=int(input(""))
+        if clave==clave_original:
+            saldo_cuenta= saldo_cuenta - monto
+            print("desea imprimir comprobante?: ")
+            print("1. Si     2. No")
+            comprobante= int(input(""))
+            if comprobante==1:
+                print(f"Monto retirado: {monto}")
+                print(f"Saldo en la cuenta: \n{saldo_cuenta}")
+            saldo_cuenta= cambio_de_moneda_peso(saldo_cuenta,2)
+    volver()
+    return saldo_cuenta
+```
