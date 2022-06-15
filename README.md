@@ -258,6 +258,9 @@ def validacion():
 ![Image text]()
 #### Complejidad Cilomatica
 ```
+R=5
+V(g)= 18-15+2=5
+V(g)= 4+1= 5
 ```
 #### Caminos posibles
 ```
@@ -268,4 +271,19 @@ def validacion():
 
 #### Codigo de funcion
 ```python
+def principal():
+    saldo_en_cuenta=3564 #soles
+    clave= 12345
+    dni=12345678
+    cuenta= 98765
+    print("Ingrese tarjeta en la ranura:")
+    opcion=validacion()
+    while opcion!=4:
+        opcion= menu()
+        if opcion==1:
+            consultas(saldo_en_cuenta)
+        elif opcion==2:
+            saldo_en_cuenta=retiros(saldo_en_cuenta, clave)
+        elif opcion==3:
+            saldo_en_cuenta=transferencias(saldo_en_cuenta, cuenta)
 ```
