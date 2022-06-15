@@ -163,6 +163,9 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
 ![Image text]()
 #### Complejidad Cilomatica
 ```
+R= 4
+V(g)=27-25+2= 4
+V(g)= 3+1= 4
 ```
 #### Caminos posibles
 ```
@@ -173,6 +176,36 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
 
 #### Codigo de funcion
 ```python
+def transferencias(saldo, cuenta):
+    """
+    Esta funcion se encarga de mostrar realizar transferencias a otras cuentas
+    """
+    cuenta_trans= cuenta
+    print("Ingrese cuenta a la que se quiere transferir:")
+    cuenta_destino=int(input(""))
+    moneda= selec_moneda()
+    if moneda==1:
+        print("Monto a transferir en soles:")
+        monto=float(input(""))
+    else:
+        print("Monto a transferir en pesos:")
+        monto= float(input(""))
+        monto=cambio_de_moneda_peso(monto, 1)
+        saldo=cambio_de_moneda_peso(saldo, 1)
+    if monto> saldo:
+        print("el monto igresado no es valido, no tiene los fundos suficientes")
+    else:
+        print("Realizando Transferencia")
+        i=0
+        while i<5:
+            print("...")
+            i+=1
+            time.sleep(1)
+        print("Transferencia exitosa")
+        time.sleep(2)
+        saldo= saldo-monto
+    volver()
+    return saldo
 ```
 ### Funcion Validacion
 ![Image text]()
