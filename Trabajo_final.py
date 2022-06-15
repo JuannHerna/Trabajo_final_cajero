@@ -18,7 +18,7 @@ def menu():
         opcion=int(input("Ingrese un valor valido del menu: "))
     return opcion
 
-def selec_moneda():
+def selec_moneda(): ##
     """
     Esta funcion se encarga de preguntar que moneda desea utilizar
     """
@@ -29,7 +29,7 @@ def selec_moneda():
         opcion=int(input("Ingrese un valor valido del menu"))
     return opcion
 
-def cambio_de_moneda_peso(saldo_cuenta, opcion):
+def cambio_de_moneda_peso(saldo_cuenta, opcion):##
     """
     Esta funcion se encarga de hacer la conversion de la moneda
     """
@@ -44,7 +44,7 @@ def volver():
     print("Volviendo al menu..")
     time.sleep(1)
 
-def consultas(saldo_cuenta):
+def consultas(saldo_cuenta):##
     """
     Este procedimiento se encarga de mostar el saldo de la cuenta
     y los ultimos 10 movimientos
@@ -69,7 +69,7 @@ def consultas(saldo_cuenta):
             print(random.choice(randomi),"de:", random.randint(1,150), "pesos")
     volver()           
 
-def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
+def retiros(saldo_cuenta,clave):##    #Parametros de entrada: saldo_cuenta, clave
     """
     Esta funcion se encarga de controlar los retiros de la cuenta
     """
@@ -139,6 +139,7 @@ def validacion():
     i=0
     clave= 12345
     dni=12345678
+    documento=0
     print("recopilando informacion")
     while i<5:
         print("...")
@@ -165,7 +166,6 @@ def validacion():
     return opcion
         
 def principal():
- 
     saldo_en_cuenta=3564 #soles
     clave= 12345
     dni=12345678
