@@ -208,7 +208,7 @@ def transferencias(saldo, cuenta):
     return saldo
 ```
 ### Funcion Validacion
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/validacion.jpg)
 #### Complejidad Cilomatica
 ```
 R=6
