@@ -174,3 +174,33 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
 #### Codigo de funcion
 ```python
 ```
+### Funcion Validacion
+![Image text]()
+#### Complejidad Cilomatica
+```
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
+```
+### Funcion Principal
+![Image text]()
+#### Complejidad Cilomatica
+```
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
+```
