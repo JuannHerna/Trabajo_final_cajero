@@ -276,7 +276,7 @@ def validacion():
     return opcion
 ```
 ### Funcion Principal
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/principal.jpg)
 #### Complejidad Cilomatica
 ```
 R=5
@@ -285,6 +285,10 @@ V(g)= 4+1= 5
 ```
 #### Caminos posibles
 ```
+1) 1,2,3,4,5,6,7,15
+2) 1,2,3,4,5,6,7,8,9,10,11,13,7,15
+3) 1,2,3,4,5,6,7,8,9,11,12,13,7,15
+4) 1,2,3,4,5,6,7,8,9,11,13,14,7,15
 ```
 #### Casos de pueba
 ```
