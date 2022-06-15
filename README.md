@@ -21,7 +21,11 @@ V(G)= A - N + 2=8-8+2=2
 V(G)= 1 + 1=2
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 #### Codigo de la funcion
 ``` python
 def selec_moneda():
@@ -45,7 +49,11 @@ V(g)=A-N+2 = 7-7+2 = 2
 V(g)=P+1 = 1+1 = 2
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 #### Codigo de la funcion
 ``` python
 def cambio_de_moneda_peso(saldo_cuenta, opcion):
@@ -69,7 +77,11 @@ V(g)= A -N +2 = 22 - 19 + 2 = 5
 V(g)= P+1= 4 + 1 = 5
 ```
 #### Caminos posibles
+```
+```
 #### Casos de pueba
+```
+```
 
 #### Codigo de Funcion
 ```python
@@ -99,13 +111,20 @@ def consultas(saldo_cuenta):
     volver()  
 ```
 ### Funcion Retiros
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/retiros.jpg)
 #### Complejidad ciclomatica
 ```
 R= 6
 V(g)= A-N+2= 32 - 28 + 2 = 6
 V(g)= 5 + 1 = 6
 ```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
 #### Codigo de funcion
 ``` python
 def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
@@ -139,4 +158,82 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
             saldo_cuenta= cambio_de_moneda_peso(saldo_cuenta,2)
     volver()
     return saldo_cuenta
+```
+### Funcion Transferencia
+![Image text]()
+#### Complejidad Cilomatica
+```
+R= 4
+V(g)=27-25+2= 4
+V(g)= 3+1= 4
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
+def transferencias(saldo, cuenta):
+    """
+    Esta funcion se encarga de mostrar realizar transferencias a otras cuentas
+    """
+    cuenta_trans= cuenta
+    print("Ingrese cuenta a la que se quiere transferir:")
+    cuenta_destino=int(input(""))
+    moneda= selec_moneda()
+    if moneda==1:
+        print("Monto a transferir en soles:")
+        monto=float(input(""))
+    else:
+        print("Monto a transferir en pesos:")
+        monto= float(input(""))
+        monto=cambio_de_moneda_peso(monto, 1)
+        saldo=cambio_de_moneda_peso(saldo, 1)
+    if monto> saldo:
+        print("el monto igresado no es valido, no tiene los fundos suficientes")
+    else:
+        print("Realizando Transferencia")
+        i=0
+        while i<5:
+            print("...")
+            i+=1
+            time.sleep(1)
+        print("Transferencia exitosa")
+        time.sleep(2)
+        saldo= saldo-monto
+    volver()
+    return saldo
+```
+### Funcion Validacion
+![Image text]()
+#### Complejidad Cilomatica
+```
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
+```
+### Funcion Principal
+![Image text]()
+#### Complejidad Cilomatica
+```
+```
+#### Caminos posibles
+```
+```
+#### Casos de pueba
+```
+```
+
+#### Codigo de funcion
+```python
 ```
