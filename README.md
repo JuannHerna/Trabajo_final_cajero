@@ -160,7 +160,7 @@ def retiros(saldo_cuenta,clave):#Parametros de entrada: saldo_cuenta, clave
     return saldo_cuenta
 ```
 ### Funcion Transferencia
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/transferencia.jpg)
 #### Complejidad Cilomatica
 ```
 R= 4
