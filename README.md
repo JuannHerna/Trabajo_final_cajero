@@ -99,7 +99,7 @@ def consultas(saldo_cuenta):
     volver()  
 ```
 ### Funcion Retiros
-![Image text]()
+![Image text](https://github.com/JuannHerna/Trabajo_final_cajero/blob/main/imagenes_de_diagramas/retiros.jpg)
 #### Complejidad ciclomatica
 ```
 R= 6
