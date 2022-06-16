@@ -26,15 +26,10 @@ V(G)= 1 + 1=2
 2) 1,2,3,4,5,8,5,8,5,6,7
 3)1,2,3,4,5,8,5,6,7
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 De: //
 Ds: opcion
-
-1) 1, opcion=1, return opcion
-2) 1, opcion=2, return opcion
-3) 5, "ingrese valor valido del menu", opcion =1, return opcion
-4) 9,  "ingrese valor valido del menu", opcion=2, return opcion
 ```
 #### Codigo de la funcion
 ``` python
@@ -63,12 +58,10 @@ V(g)=P+1 = 1+1 = 2
 1) 1,2,3,4,5,6
 2) 1,2,3,7,5,6
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE: saldo en la cuenta, opcion
 DS: vonversion de moneda
-1) opcion=1, resulta= saldo_cuenta*pesos, return resulta
-2) opcion=2, resulta= saldo en cuenta/pesos, return resulta
 ```
 #### Codigo de la funcion
 ``` python
@@ -99,7 +92,7 @@ V(g)= P+1= 4 + 1 = 5
 3)1,2,3,4,5,6,7,8,7,9,10,11,13,14,19,20
 4)1,2,3,4,5,6,7,9,15,16,18,20
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE:saldo en la cuenta
 DS: //
@@ -148,7 +141,7 @@ V(g)= 5 + 1 = 6
 4)1,2,3,4,5,6,10,11,12,13,14,26,27,28
 
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE: saldo en la cuenta, clave
 DS: saldo en la cuenta
@@ -203,7 +196,7 @@ V(g)= 3+1= 4
 3) 1,2,3,4,5,6,7,8,13,15,16,17,18,19,20,17,21,22,23,24,25
 4)1,2,3,4,5,6,9,10,11,12,13,14,23,24,25
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE:saldo, cuenta
 DS: saldo
@@ -256,7 +249,7 @@ V(g)= P+1= 5+1= 6
 2) 1,2,3,4,5,6,10, 11,12,16,23,26,27,25
 3) 1,2,3,4,5,6,10,11,12,13,14,15,12,16,23,24,25
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE: //
 DS: opcion
@@ -309,7 +302,7 @@ V(g)= 4+1= 5
 3) 1,2,3,4,5,6,7,8,9,11,12,13,7,15
 4) 1,2,3,4,5,6,7,8,9,11,13,14,7,15
 ```
-#### Casos de pueba
+#### Datos de entrada y datos de salida
 ```
 DE: //
 DS: //
