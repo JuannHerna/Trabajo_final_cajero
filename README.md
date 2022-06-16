@@ -28,6 +28,13 @@ V(G)= 1 + 1=2
 ```
 #### Casos de pueba
 ```
+De: //
+Ds: opcion
+
+1) 1, opcion=1, return opcion
+2) 1, opcion=2, return opcion
+3) 5, "ingrese valor valido del menu", opcion =1, return opcion
+4) 9,  "ingrese valor valido del menu", opcion=2, return opcion
 ```
 #### Codigo de la funcion
 ``` python
@@ -58,6 +65,10 @@ V(g)=P+1 = 1+1 = 2
 ```
 #### Casos de pueba
 ```
+DE: saldo en la cuenta, opcion
+DS: vonversion de moneda
+1) opcion=1, resulta= saldo_cuenta*pesos, return resulta
+2) opcion=2, resulta= saldo en cuenta/pesos, return resulta
 ```
 #### Codigo de la funcion
 ``` python
@@ -90,6 +101,8 @@ V(g)= P+1= 4 + 1 = 5
 ```
 #### Casos de pueba
 ```
+DE:saldo en la cuenta
+DS: //
 ```
 
 #### Codigo de Funcion
@@ -137,6 +150,8 @@ V(g)= 5 + 1 = 6
 ```
 #### Casos de pueba
 ```
+DE: saldo en la cuenta, clave
+DS: saldo en la cuenta
 ```
 
 #### Codigo de funcion
@@ -190,6 +205,8 @@ V(g)= 3+1= 4
 ```
 #### Casos de pueba
 ```
+DE:saldo, cuenta
+DS: saldo
 ```
 
 #### Codigo de funcion
@@ -241,6 +258,8 @@ V(g)= P+1= 5+1= 6
 ```
 #### Casos de pueba
 ```
+DE: //
+DS: opcion
 ```
 
 #### Codigo de funcion
@@ -292,6 +311,8 @@ V(g)= 4+1= 5
 ```
 #### Casos de pueba
 ```
+DE: //
+DS: //
 ```
 
 #### Codigo de funcion
